@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:textStyle="bold"
+                android:textSize="36sp"
+               android:layout_gravity="end"
+                android:layout_marginBottom="16dp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/textSair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sair"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="@color/red"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textSize="24dp"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textDashboard2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="Gestão de Livros"
+            android:textSize="34dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textLivros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disponiveis: "
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="start"
+                android:layout_gravity="end"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/textLivrosNaoLidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Por Ler: "
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="start"
+                android:layout_gravity="end"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/textLivrosAndamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Em andamento: "
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="start"
+                android:layout_gravity="end"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:id="@+id/textLivrosconcluido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Concluidos: "
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:id="@+id/textLivros_lidosGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Por Genero: "
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="start"
+                android:layout_gravity="end"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:id="@+id/textLivrosMes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Neste mes: "
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:id="@+id/textLivrosAutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Autor mais Lido: "
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+
+            <org.eazegraph.lib.charts.BarChart
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/barchart"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:padding="16dp"
+                app:egFixedBarWidth="true"
+                app:egBarWidth="20dp"
+                app:egLegendHeight="40dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

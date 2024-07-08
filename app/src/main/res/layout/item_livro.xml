@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título"
+            android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autor"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gênero"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textNumeroPaginas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número de Páginas"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textEdicao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edição"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textAno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ano"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textDataInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data de Início"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textPaginasLidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Páginas Lidas"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textAnotacoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anotações"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/add_nota"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/add_nota"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="@color/green"
+                android:contentDescription="Adicionar Nota"/>
+
+            <ImageView
+                android:id="@+id/edit_item"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/edit"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="@color/blue"
+                android:contentDescription="Editar"/>
+
+            <ImageView
+                android:id="@+id/delete_item"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/delete_item"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Excluir"
+                app:tint="@color/red" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
